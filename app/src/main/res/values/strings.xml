@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TalkHub</string>
+    <!-- Caso necessario mude o conteudo de uma string Abaixo -->
+    <string name="ola_em_branco_fragment_string">Ola em branco</string>
+    <string name="pedir_login_string">Faça login no TalkHub</string>
+    <string name="email_string">Email</string>
+    <string name="senha_string">Senha</string>
+    <string name="login_string">Login</string>
+    <string name="nao_tenho_conta_string">Ainda não tenho conta</string>
+    <string name="cadastre_se_chat_string">Cadastre-se no TalkHub</string>
+    <string name="ja_tenho_conta_string">Já tenho uma conta</string>
+    <string name="registro_string">Registro</string>
+    <string name="repetir_senha_string">repita a senha</string>
+    <string name="nome_usuario_string">Nome de usuário</string>
+    <string name="chats_string">Chats</string>
+    <string name="search_string">Pesquise aqui: </string>
+    <string name="nova_mensagem">Nova mensagem</string>
+    <string name="logout_sair">Sair</string>
+    <string name="contato_aleatorio_string">Lucas Medeiros</string>
+    <string name="mensagem_aleatoria_string">lucas medeiros disso que. . .</string>
+    <string name="data_string_m">23/12-Domingo</string>
+    <string name="selecione_usuario">Selecione o usuário</string>
+    <string name="digite_a_mensagem">Digite sua mensagem. . .</string>
+    <string name="enviar">Enviar</string>
+    <string name="perfil">Perfil</string>
+    <string name="salvar_perfil_usuario_string">Salvar Perfil</string>
+    <string name="carregamento">Carregando. . .</string>
+</resources>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "32006611332",
+    "firebase_url": "https://talkhub-9296f-default-rtdb.firebaseio.com",
+    "project_id": "talkhub-9296f",
+    "storage_bucket": "talkhub-9296f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32006611332:android:3e9c7a6faaf50acc7dfdd1",
+        "android_client_info": {
+          "package_name": "com.ifam.talkhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL8k_GbzJQxK7jGKG3_i6R99wt_LW3CNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

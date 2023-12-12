@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    tools:context=".ui.fragments.chat.ChatFragment">
+
+    <View
+        android:id="@+id/view_background"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_46sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/background_color" />
+
+    <ImageButton
+        android:id="@+id/botao_voltar_imagebuttom"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/back_icon"
+        android:background="@android:color/transparent"
+        android:layout_margin="4sp"
+        app:tint="@color/ImageButtonTint"
+        android:contentDescription="image button voltar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagem_usuario_circleimageview"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toEndOf="@+id/botao_voltar_imagebuttom"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:src="@drawable/usuario_sem_perfil"
+        app:civ_border_color="@color/civ_border_color"
+        app:civ_border_width="@dimen/_1sdp" />
+
+    <TextView
+        android:id="@+id/nome_do_usuario_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imagem_usuario_circleimageview"
+        app:layout_constraintStart_toEndOf="@id/imagem_usuario_circleimageview"
+        app:layout_constraintTop_toTopOf="@+id/imagem_usuario_circleimageview"
+        android:maxLength="24"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/magilio" />
+
+    <EditText
+        android:id="@+id/campo_mensagem_edittext"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/cyrcle_background"
+        android:hint="@string/digite_a_mensagem"
+        android:inputType="textMultiLine"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/hintTextColor"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:fontFamily="@font/magilio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/enviar_mensagem_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/enviar_mensagem_button"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/cyrcle_background"
+        app:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text_color"
+        android:text="@string/enviar"
+        android:fontFamily="@font/magilio"
+        app:layout_constraintBottom_toBottomOf="@+id/campo_mensagem_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/campo_mensagem_edittext" />
+
+    <ImageView
+        android:id="@+id/chat_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/chat_background"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="@dimen/_4sdp"
+        app:layout_constraintTop_toBottomOf="@id/view_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/campo_mensagem_edittext"
+        android:contentDescription="image view de fundo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_4sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintTop_toBottomOf="@id/view_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/campo_mensagem_edittext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
